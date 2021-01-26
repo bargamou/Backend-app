@@ -61,7 +61,7 @@ advertiserController.route('/edit/:id').get(function (req, res) {
 });
 
 // Defined delete | remove | destroy route
-advertiserController.route('/delete/:id').get(function (req, res) {
+advertiserController.route('/delete/:id').delete(function (req, res) {
     Advertiser.findByIdAndRemove({_id: req.params.id}, function(err, id){
         if(err) res.json(err);
         else res.json('Successfully removed');

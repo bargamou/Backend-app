@@ -81,7 +81,7 @@ playlistController.route('/addVideo/:name').post(function (req, res) {
   const query = {nom: nom}
 
   Playlist.findOneAndUpdate(query,
-    {$push: {videos: req.body.videoUrl}},
+    {$push: {videos: req.body}},
     function(err, doc) {
         if(err){
         console.log(err);
