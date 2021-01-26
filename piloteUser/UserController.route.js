@@ -53,11 +53,10 @@ userController.route('/update/:id').post(function (req, res) {
         console.log("username : " + req.body.username);
         user.username = req.body.username;
         user.password = req.body.password;
-        user.age = req.body.age;
-        user.sexe = req.body.sexe;
         user.nom = req.body.nom;
         user.prenom = req.body.prenom;
         user.email = req.body.email;
+        user.role = req.body.role;
 
         user.save().then(user => {
           res.json('Update complete');
