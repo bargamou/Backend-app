@@ -1,0 +1,21 @@
+{
+     "scripts": {
+          "server": "nodemon server.js"
+     },
+     "name": "node-site",
+     "version": "1.0.0",
+     "description": "",
+     "main": "server.js",
+     "author": "",
+     "license": "ISC",
+     "dependencies": {
+          "cors": "^2.8.5",
+          "express": "^4.14.0",
+          "mongoose": "^5.5.4",
+          "nodemon": "^1.11.0"
+     },
+     "devDependencies": {
+          "gulp-nodemon": "^2.2.1",
+          "nodemon": "^1.11.0"
+     }
+}
